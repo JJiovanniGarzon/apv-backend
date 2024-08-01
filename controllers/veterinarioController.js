@@ -66,6 +66,7 @@ const confirmar = async (req, res) => {
 
 const autenticar = async (req, res) => {
     const { email, password } = req.body
+    
     // comprobar si el usuario existe
     const usuario = await Veterinario.findOne({ email });
 
